@@ -1,0 +1,10 @@
+TDD - GREEN - T2 passes after the BR2 guard is restored
+Command: python -m unittest tests.test_all.T2_EquipmentStateTransition -v
+
+test_T2_already_borrowed_cannot_be_reserved_again ... ok
+test_T2_available_can_be_reserved ... ok
+
+----------------------------------------------------------------------
+Ran 2 tests in 0.001s
+
+OK

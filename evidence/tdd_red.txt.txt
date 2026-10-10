@@ -1,0 +1,19 @@
+TDD - RED - T2 fails before the BR2 guard is implemented
+Command: python -m unittest tests.test_all.T2_EquipmentStateTransition -v
+
+test_T2_already_borrowed_cannot_be_reserved_again ... FAIL
+test_T2_available_can_be_reserved ... ok
+
+======================================================================
+FAIL: test_T2_already_borrowed_cannot_be_reserved_again
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\Deniss\OneDrive\Desktop\equipment_borrowing\tests\test_all.py", line 136, in test_T2_already_borrowed_cannot_be_reserved_again
+    with self.assertRaises(EquipmentNotAvailableError):
+        eq.reserve()
+AssertionError: EquipmentNotAvailableError not raised
+
+----------------------------------------------------------------------
+Ran 2 tests in 0.001s
+
+FAILED (failures=1)
